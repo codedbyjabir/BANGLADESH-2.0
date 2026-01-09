@@ -1,0 +1,230 @@
+/* Universal Selector */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #f5f5f5;
+}
+
+
+/* Header Styling */
+
+.container {
+
+    /* যেখানেই কোনো element মাঝখানে (center) আনতে হবে, সেখানেই—        */
+
+    max-width: 1350px;
+    /* element-এর সর্বোচ্চ প্রস্থ 1350px পর্যন্ত সীমাবদ্ধ রাখে। এর বেশি বড় হতে দেয় না। */
+    /* width → ছোট স্ক্রিনে scroll আসে  
+       max-width → screen অনুযায়ী adjust হয়  */
+    margin: auto;
+    /* element-টিকে বাম ও ডান দিক থেকে মাঝখানে (center) নিয়ে আসে। */
+}
+
+.my_button {
+
+    border-radius: 8px;
+    /* element-এর কোণগুলোকে 8px গোলাকার (rounded) করে। */
+    padding: 8px;
+    /* element-এর ভেতরের content এবং border-এর মাঝে 8px ফাঁকা জায়গা রাখে। */
+    font-weight: 600;
+    border: 1px solid #006A50;
+    color: #006A50;
+    background-color: white;
+    box-sizing: border-box;
+    /* Layout সহজ ও predictable করতে box-sizing: border-box; ব্যবহার করা হয়। */
+}
+
+.my_button-2 {
+
+    border-radius: 8px;
+    /* element-এর কোণগুলোকে 8px গোলাকার (rounded) করে। */
+    font-weight: 600;
+    background: rgba(0, 106, 80, 1);
+    color: white;
+    padding: 8px;
+    /* element-এর ভেতরের content এবং border-এর মাঝে 8px ফাঁকা জায়গা রাখে। */
+    max-width: max-content;
+    /* Element যতটুকু লেখা বা content আছে, ঠিক ততটুকু জায়গাই নেয়—এর বেশি না।  */
+}
+
+header {
+    background-color:   rgba(198, 228, 214, 1);;
+}
+
+nav {
+    display: flex;
+    /* কোনো element-কে flex container বানায় এবং তার ভেতরের element গুলোকে এক লাইনে সাজায়। */
+    justify-content: space-between;
+    /* flex items গুলোকে বাম ও ডান দিকে ছড়িয়ে দেয়, প্রথমটি বামে, শেষটি ডানে থাকে, মাঝখানে সমান ফাঁকা জায়গা থাকে। */
+    padding: 10px;
+    /* element-এর চারপাশে (উপরে, নিচে, বামে, ডানে) content আর border-এর মাঝে 10px ভিতরের ফাঁকা জায়গা দেয়। */
+}
+
+.link-parent {
+    display: flex;
+    gap: 22px;
+    /* প্রতিটি item-এর মাঝে 22px ফাঁকা জায়গা রাখে। */
+    list-style: none;
+    /* list-এর ডট / নাম্বার (bullet point) তুলে দেয়। */
+    justify-content: center;
+    /* flex container-এর সব items horizontalভাবে (row-wise) মাঝখানে রাখে। */
+}
+
+.link-parent a {
+    text-decoration: none;
+    /* টেক্সটের উপর থাকা underline / overline / line-through তুলে দেয়। */
+}
+
+
+
+
+
+/* Hero Styling */
+
+.hero_parent {
+    display: flex;
+    /* কোনো element-কে flex container বানায় এবং তার ভেতরের element গুলোকে এক লাইনে সাজায়। */
+    gap: 20px;
+    justify-content: space-between;
+    /* flex items গুলোকে বাম ও ডান দিকে ছড়িয়ে দেয়, প্রথমটি বামে, শেষটি ডানে থাকে, মাঝখানে সমান ফাঁকা জায়গা থাকে। */
+    background: rgba(198, 228, 214, 1);
+    border-radius: 24px;
+    align-items: center;
+    /* Flex container-এর child items কে উল্লম্বভাবে (vertical) মাঝখানে আনে।
+সাধারণভাবে ব্যবহার হয়, যখন element-গুলোকে height-এর মধ্যে vertically centered করতে হয়। */
+    padding: 80px 100px 80px 100px;
+    /* element-এর চারপাশে (উপরে, নিচে, বামে, ডানে) content আর border-এর মাঝে 10px ভিতরের ফাঁকা জায়গা দেয়। */
+    margin: 20px auto;
+
+}
+
+
+.hero_parent h2 {
+    color: rgba(14, 14, 14, 0.5);
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.hero_parent p {
+    color: rgba(14, 14, 14, 1);
+    font-size: 56px;
+    font-weight: 700;
+    margin: 20px 0;
+    /* Top & bottom: 20px     Left & right: 0 */
+
+}
+
+.hero_parent button {
+    color: white;
+    background: rgba(0, 106, 80, 1);
+    padding: 17px 34px 17px 34px;
+    /* element-এর চারপাশে (উপরে, নিচে, বামে, ডানে) content আর border-এর মাঝে 10px ভিতরের ফাঁকা জায়গা দেয়। */
+}
+
+
+/* <!-- Pillars of "Bangladesh 2.0" --> */
+
+
+
+.Pillars-Section-Title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.Pillar-card-parent {
+    display: flex;
+    gap: 32px;
+}
+
+
+.pillar-card {
+    border-radius: 12px;
+    /* background: rgba(255, 255, 255, 1); */
+    background: white;
+    padding: 12px;
+    /* element-এর চারপাশে (উপরে, নিচে, বামে, ডানে) content আর border-এর মাঝে 24px ভিতরের ফাঁকা জায়গা দেয়। */
+    border: 1px solid rgba(14, 14, 14, 0.15);
+    display: flex;
+    /* Flex layout চালু করে */
+    flex-direction: column;
+    /* ভেতরের element গুলো একটার নিচে একটা সাজায় */
+    gap: 15px;
+    /* gap: 15px; item গুলোর মাঝে সমান 15px দূরত্ব রাখে। */
+    flex: 1;
+    /* flex: 1; ব্যবহার করলে flex item গুলো available space সমানভাবে ভাগ করে নেয়। */
+}
+
+.pillar-card img {
+    width: 64px;
+    height: 64px;
+}
+
+
+.pillar-card p {
+    color: rgba(14, 14, 14, 0.7);
+
+}
+
+
+
+
+/* <!-- Recent News --> */
+
+.Recent-News-header {
+    margin-bottom: 15px;
+}
+
+.Recent-News-section h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: rgba(14, 14, 14, 1);
+    margin-bottom: 8px;
+}
+
+.Recent-News-section p {
+    color: rgba(14, 14, 14, 0.7);
+
+}
+
+.recent-news-card {
+    display: flex;
+    gap: 15px;
+    /* gap: 15px; item গুলোর মাঝে সমান 15px দূরত্ব রাখে। */
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+
+.recent-news-card .Satellite_img {
+    border-radius: 24px;
+    /* ব্যবহার করলে element-এর কোণগুলো গোল হয়ে যায়। */
+    width: 408px;
+    height: 306px;
+    padding: 50px;
+    /* element-এর ভিতরে চারদিকে 50px জায়গা রাখে। */
+}
+
+.recent-news-info {
+    display: flex;
+    flex-direction: column;
+    /* এই কোডটি element-এর ভিতরের item গুলোকে একটার নিচে আরেকটা করে সাজায়। */
+    gap: 13px;
+}
+
+.recent-news-info .al-zazira {
+
+    width: 134px;
+    height: 40px;
+
+}
+
+.recemt-news-card-2{
+    flex-direction: row-reverse;
+    /* row-reverse ব্যবহার করলে flex items ডান দিক থেকে শুরু হয়ে বাম দিকে সাজানো হয়। */
+}
